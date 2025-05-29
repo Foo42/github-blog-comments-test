@@ -1,0 +1,18 @@
+name: on-merged-comments
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - comment-targets/**/individual/*.md
+
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: testing
+        run: |
+          echo "hello"
+          which jq

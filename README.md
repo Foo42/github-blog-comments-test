@@ -9,4 +9,6 @@ Can I get a flow going where people comment by opening a PR and I moderate comme
 We could have a directory in which there is a sub-directory per post (or more boradly, per comment target). In each directory there is a file per comment. A valid comment PR would create a new comment file (and nothing else). When the PR is merged, an action would append the contents to an aggregated comment file.
 
 ## Steps
-- [] Make an action which runs on merge into main and performs per-directory aggregations
+- [ ] Make an action which runs on merge into main and performs per-directory aggregations
+- [ ] Turn on main branch protection
+- [ ] Add an action to perform automated checks on a PR when it's opened (check it _only_ creates a new comment in the valid format)
